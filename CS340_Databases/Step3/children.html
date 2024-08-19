@@ -1,0 +1,105 @@
+<html>
+<head>
+<title>Children</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<h1>Children</h1>
+
+[ <a href="children.html">Children</a> | <a href="teachers.html">Teachers</a> | <a href="class_costs.html">Class Costs</a> ]
+<div id="browse" style="display: block">
+<p><strong>Browse Children</strong></p>
+<table border="1" cellpadding="5">
+  <tr>
+    <th><a href="#">New</a></th>
+    <th></th>
+    <th>ID</th>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Age</th>
+    <th>Class</th>
+    <th>Tuition Status</th>
+    <th>Favorite Learning Resource</th>
+  </tr>
+  <tr>
+    <td><a href="#">Edit</a></td>
+    <td><a href="#">Delete</a></td>
+    <td align="right" >1</td>
+    <td>Devin</td>
+    <td>Peterson</td>
+    <td align="right" >2</td>
+    <td align="right" >1</td>
+    <td align="right" >1</td>
+    <td align="right" >3</td>
+  </tr>
+  <tr>
+    <td><a href="#">Edit</a></td>
+    <td><a href="#">Delete</a></td>
+    <td align="right" >1</td>
+    <td>Anaka</td>
+    <td>Herrera</td>
+    <td align="right" >2</td>
+    <td align="right" >1</td>
+    <td align="right" >1</td>
+    <td align="right" >2</td>
+  </tr>
+  <tr>
+    <td><a href="#">Edit</a></td>
+    <td><a href="#">Delete</a></td>
+    <td align="right" >1</td>
+    <td>Gang</td>
+    <td>Jin</td>
+    <td align="right" >1</td>
+    <td align="right" >2</td>
+    <td align="right" >1</td>
+    <td align="right" >1</td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+</div> <!-- browse -->
+<div id="insert" style="display: block">
+    <form id="addPlanet">
+        <legend><strong>Add Planet</strong></legend>
+          <fieldset class="fields">
+            <label> Name </label> <input type="text" name="name">
+            <label> Population </label> <input type="text" name="population">
+            <label> Language </label> <input type="text" name="language">
+            <label> Capital </label> <input type="text" name="language">
+          </fieldset>
+          <input class="btn" type="submit" id="addPlanet" value="Add a Planet">
+          <input class="btn" type="button" value="cancel">
+	</form> <!--add new planet-->
+</div><!-- insert -->
+
+<p>&nbsp;</p>
+<div id="update" style="display: block">
+  <form id="updatePlanet">
+      <legend><strong>Update Planet</strong></legend>
+          <fieldset class="fields">
+          <label>ID:</label> 1
+            <label> Name </label> <input type="text" value="Gemenon" name="name">
+            <label> Population </label> <input type="text"  name="population" value="2800000000">
+            <label> Language </label> <input type="text" name="language" value="Old Gemenese">
+            <label> Capital </label> <input type="text" name="language" value="Oranu">
+    </fieldset>
+    <input class="btn" type="submit" id="UpdateSavePlanet" value="Save Update Planet">
+          <input class="btn" type="button" value="cancel" >
+  </form> 
+</div><!-- update -->
+<p>&nbsp;</p>
+<div id="delete" style="display: block">
+  <form id="deletePlanet">
+      <legend><strong>Delete Planet</strong></legend>
+          <fieldset class="fields">
+          <p>Are you sure you wish to delete the following?</p>
+          <label>ID:</label> 1
+            <label> Name </label> Gemenon
+            
+    </fieldset>
+    <input class="btn" type="submit" id="DeletePlanet" value="Delete Planet">
+          <input class="btn" type="button" value="cancel" >
+  </form> 
+</div><!-- delete -->
+</body>
+</html>
