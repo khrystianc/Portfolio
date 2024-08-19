@@ -1,0 +1,21 @@
+2023-12-06 14:50:03,410 - INFO - Connected to server.
+2023-12-06 14:50:09,833 - INFO - Server: hi
+2023-12-06 14:50:17,242 - INFO - Server: great
+2023-12-06 14:50:20,782 - INFO - Server: Your move (rock, paper, scissors): 
+2023-12-06 14:50:25,973 - INFO - Server: Server chose rock. Player wins!
+2023-12-06 14:50:43,373 - INFO - Server: ok
+2023-12-06 14:50:45,833 - INFO - Connection closed.
+2023-12-06 23:41:47,334 - INFO - Connected to server.
+2023-12-06 23:41:49,747 - INFO - Connection closed.
+2023-12-06 23:42:12,484 - INFO - Connected to server.
+2023-12-06 23:42:39,420 - INFO - Server: hi
+2023-12-06 23:42:51,870 - INFO - Server: sure!
+2023-12-06 23:42:57,979 - INFO - Server: Your move (rock, paper, scissors): 
+2023-12-06 23:43:02,635 - INFO - Server: Server chose rock. It's a tie!
+2023-12-06 23:43:30,119 - INFO - Server: bye
+2023-12-06 23:43:36,260 - INFO - Server: /q
+2023-12-06 23:43:36,261 - INFO - No data received. Server may be closed.
+2023-12-06 23:43:36,261 - INFO - Connection closed.
+2023-12-06 23:44:40,146 - INFO - Connected to server.
+2023-12-06 23:45:03,500 - INFO - Server: cool. bye!
+2023-12-06 23:45:06,677 - INFO - Connection closed.
