@@ -1,0 +1,9 @@
+Documentation - Procedure Headers: These are not procedure headers as required by the Coding Style Guidelines. I would recommend reviewing that document, specifically page 9.
+
+Completeness - Validates User Data: Neglects to check edge cases, otherwise functional. (Asking for 1 prime number is rejected even though this is valid iunput.)
+
+Correctness - Displays correct number of prime numbers: Edge cases are neglected or display incorrectly.(You only display up to 4 primes.)
+
+Correctness - Calculations are Correct: Some (fewer than 5) non-prime values appear, or some primes (fewer than 5) appear out of order (You kind of have the right idea, but I think your loop is terminating too early/you are calling farewell at a time that doesn't make sense.)
+
+Requirements - Counted loop uses LOOP instruction: Did not even attempt

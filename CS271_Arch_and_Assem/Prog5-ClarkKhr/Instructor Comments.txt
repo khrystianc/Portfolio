@@ -1,0 +1,26 @@
+Documentation - Procedure Headers: Descriptive headers but lacking pre- and post-conditions and 'registers changed'
+
+Completeness - Displays Sorted randArray: Incomplete
+
+Completeness - Displays 'Counts' Array: Incomplete
+
+Completeness - Arrays are displayed 20 values per line, with once space between values.: Arrays are displayed 20 values per line, with two spaces between values. (Full marks)
+
+Correctness - Array declarations are sized based on the constant values ARRAYSIZE, LO, and HI: counts DWORD 20 DUP(?)
+The 'counts' array is not sized according to the constant values LO and HI.
+
+Correctness - randArray is sorted in ascending order: Imperfect Sort
+
+Correctness - Median is calculated and rounded properly: Incorrect median
+
+Correctness - 'counts' array accurately lists the number of instances of each value in 'randArray': Counts may be off by 1 in special cases (such as when there are no instances of a number)
+
+Requirements - displayList used for all array printouts: No attempt
+
+Requirements - Limits as CONSTANTS: No attempt
+
+Requirements - No global references outside of main: Line 189, the 'displayMedian' procedure references a constant.
+MOV EBX, ARRAYSIZE
+
+Requirements - Correct Array Addressing Modes: No attempt
+

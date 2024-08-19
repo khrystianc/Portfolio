@@ -1,0 +1,33 @@
+Note: Contest any assignment graded by Joshua Cox!!!!
+
+Program Assembles & Links: Errors preventing program assembling.
+
+Documentation - Procedure/Macro Headers: Procedure and macro headers missing.
+
+Verification - Program Executes: Program won't execute without fixes.
+
+Completeness - Test program gets 10 validated integers from user and displays them later: Crashes after 2 inputs received.
+
+Completeness - Displays Correct Sum: Sum is missing.
+
+Completeness - Displays Correct Average: Average is missing
+
+Correctness - String to Number Conversion: The string to number conversion is attempted but isn't fully implemented.
+
+Correctness - Number to String Conversion: The number to string conversion is attempted but isn't fully implemented.
+
+Correctness - mDisplayString macro works: mDisplayString shouldn't use the OFFSET directive, since they require global references to work.
+
+Requirements - User Input validated as per Assignment Document: The validation isn't fully implemented.
+
+Requirements - Conversions use String Primitives: Conversions aren't implemented.
+
+Requirements - Properly uses WriteVal: Number conversion isn't implemented.
+
+Requirements - Properly uses ReadVal: String conversion isnt implemented
+
+Requirements - Used registers saved/restored by procedures and macros: Registers aren't preserved in procedures.
+
+Requirements - No Globals Outside of Main, STDCALL calling convention (pass parameters on stack): All variables and constants used in procedures should be passed in through the stack, rather than accessed directly through their global references: intro1 in introduction, user_prompt in ReadVal, num_show in WriteVal, etc.
+Global variable references appear in 3 procedures.
+

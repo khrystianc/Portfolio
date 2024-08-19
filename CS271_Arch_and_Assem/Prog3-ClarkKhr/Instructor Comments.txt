@@ -1,0 +1,5 @@
+Correctness - Calculates and Rounds average correctly: Calculation is off by 1 due to rounding
+
+All boundaries are defined and used as CONSTANTs (defined using 'EQU' or '='): Per CS271 Style Guide, constants should be above .data and in all caps. (Program failed two test cases: Test case 1 (-200, -100, -50, -1, 0) showed avg as 87 instead of 88. Test case 2 (-8, -9, -9, 5) shows avg. as -8 instead of -9.)
+
+Program uses readable white-space, indentation, and spacing as per the CS271 Style Guide. Logical sections are separated by white space: Variables can be properly aligned better. (Program is marginally readable but lacks proper alignment and white space.)
