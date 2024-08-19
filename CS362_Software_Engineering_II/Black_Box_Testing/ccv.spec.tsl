@@ -1,0 +1,46 @@
+
+Test Case 1  		<error>
+   length :  0-9
+
+
+Test Case 2  		<error>
+   length :  10-14
+
+
+Test Case 3  		<error>
+   length :  17-18
+
+
+Test Case 4  		<error>
+   length :  19-inf
+
+
+Test Case 5  		(Key = 3.2.1.)
+   length   :  15
+   prefix   :  34
+   checksum :  luhn's algorithm
+
+
+Test Case 6  		(Key = 3.3.1.)
+   length   :  15
+   prefix   :  37
+   checksum :  luhn's algorithm
+
+
+Test Case 7 		(Key = 4.1.1.)
+   length   :  16
+   prefix   :  4
+   checksum :  luhn's algorithm
+
+
+Test Case 8 		(Key = 4.4.1.)
+   length   :  16
+   prefix   :  51-55
+   checksum :  luhn's algorithm
+
+
+Test Case 9 		(Key = 4.5.1.)
+   length   :  16
+   prefix   :  2221-2720
+   checksum :  luhn's algorithm
+

@@ -1,0 +1,116 @@
+Visa
+    Prefix(es): 4
+    Length: 16
+MasterCard
+    Prefix(es): 51 through 55 and 2221 through 2720 
+    Length: 16
+American Express
+    Prefix(es): 34 and 37
+    Length: 15
+
+Credit Card Validator:
+* Must 10 to 19 digits in Length, depending on the issuer
+* Fist few digits are must match the issuer Prefix for that credit company
+* The last digit is a checksum or check digit using the Luhn Algorithm
+* function only handles three types of card issuers: Visa, MasterCard and AmEx
+* For Visa, the prefix must be "4" and the length must be 16
+* For MasterCard, the prefix must be either "51" through "55" or "2221" through "2720", and the length must be 16
+* For American Express, the prefix must be either "34" or "37", and the length must be 15
+
+#Luhn's Algorithm
+function isValid(cardNumber[1..length])
+    sum := 0
+    parity := length mod 2
+    for i from 1 to length do
+        if i mod 2 != parity then
+            sum := sum + cardNumber[i]
+        elseif cardNumber[i] > 4 then
+            sum := sum + 2 * cardNumber[i] - 9
+        else
+            sum := sum + 2 * cardNumber[i]
+        end if
+    end for
+    return sum mod 10 = 0
+end function
+
+#Comment test generation and methodology
+#Tests that cover all prefix ranges
+#No PEP8 linting errors
+#do not remove passing tests; submit them all
+#no "Random Testing"
+#use "Boundary testing" and "Partition testing"
+
+import unittest
+from check_pwd import check_pwd
+
+class TestCase(unittest.TestCase):
+
+    def test_length(self):
+        self.assertEqual(check_pwd('ABcd1234!'), True)
+        self.assertEqual(check_pwd('strongpassword'), True)
+
+    def test_lowercase(self):
+        self.assertEqual(check_pwd('Password1!'), True)
+        self.assertEqual(check_pwd('PASSWORD1!'), False)
+
+    def test_uppercase(self):
+        self.assertEqual(check_pwd('password1!'), True)
+        self.assertEqual(check_pwd('password1!'), True)
+
+    def test_digit(self):
+        self.assertEqual(check_pwd('password!'), False)
+        self.assertEqual(check_pwd('password1!'), True)
+
+    def test_symbol(self):
+        self.assertEqual(check_pwd('password1'), False)
+        self.assertEqual(check_pwd('password1!'), True)
+
+if __name__ == '__main__':
+    unittest.main()
+
+----------------------------------------------------------------------\
+
+def check_pwd(password):
+    # Check password length
+    if len(password) < 8 or len(password) > 20:
+        return False
+
+    # Check for at least one lowercase letter
+    lowercase_found = False
+    for char in password:
+        if char.islower():
+            lowercase_found = True
+            break
+    if not lowercase_found:
+        return False
+
+    # Check for at least one uppercase letter
+    uppercase_found = False
+    for char in password:
+        if char.isupper():
+            uppercase_found = True
+            break
+    if not uppercase_found:
+        return False
+
+    # Check for at least one digit
+    digit_found = False
+    for char in password:
+        if char.isdigit():
+            digit_found = True
+            break
+    if not digit_found:
+        return False
+
+    # Check for at least one permitted symbol
+    permitted_symbols = "~`!@#$%^&*()_+-="
+    symbol_found = False
+    for char in password:
+        if char in permitted_symbols:
+            symbol_found = True
+            break
+    if not symbol_found:
+        return False
+
+    # All criteria met
+    return True
