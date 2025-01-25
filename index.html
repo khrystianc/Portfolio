@@ -5,11 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Khrystian Clark's Portfolio</title>
   <link rel="stylesheet" href="styles.css">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>Khrystian Tino Clark</h1>
-    <p>Dynamic Developer | Engineer | Leader</p>
+    <div class="header-container">
+      <h1>Khrystian Tino Clark</h1>
+      <p>Dynamic Developer | Engineer | Leader</p>
+    </div>
   </header>
   <nav>
     <ul>
@@ -19,17 +26,20 @@
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
-  <section id="about">
+  <section id="about" class="section">
     <h2>About Me</h2>
-    <p>Welcome! I'm a results-driven developer with expertise in Python, C++, and machine learning. I thrive at the intersection of innovation and leadership.</p>
+    <p>
+      Welcome! I'm a results-driven developer with expertise in Python, C++, and machine learning. 
+      I thrive at the intersection of innovation and leadership, with a passion for developing cutting-edge solutions.
+    </p>
   </section>
-  <section id="projects">
+  <section id="projects" class="section">
     <h2>Projects</h2>
-    <ul>
+    <ul class="project-list">
       <li>
         <a href="https://github.com/fenyuchenabc/CS467-GPT-API-Challenge">
           GPT-API-Challenge
-        </a>: Children's interactive story book with AI generated visual aids
+        </a>: Children's interactive storybook with AI-generated visual aids
       </li>
       <li>
         <a href="https://github.com/beetbox/beets">
@@ -39,32 +49,36 @@
       <li>
         <a href="https://github.com/ilkilab/agorakube">
           AgoraKube
-        </a>: Integrated GitHub Actions for Improved Project Management for Kubernetes installation on AMD-64 and cloud environments
+        </a>: Integrated GitHub Actions for improved project management for Kubernetes installation on AMD-64 and cloud environments
       </li>
       <li>
         <a href="https://github.com/JCD-H/CS340_GroupProject">
-          Skills project
-        </a>: Showcase of SQL/DB use, GUI, css, agile, schema creation, DDL, DML, web development handlebars
+          Skills Project
+        </a>: Showcase of SQL/DB use, GUI, CSS, Agile, schema creation, DDL, DML, web development using Handlebars
       </li>
       <li>
         <a href="https://github.com/khrystianc/CS162">
-          Python skills library
-        </a>: Showcase of string sort, bubble sort, integer parsing, function recursion for max and min, subsequences, bools, text bfile manipulation, box sort, binary search, mean calculations, unittesting, json to csv file translation, directory CRUD, linked list recursion.
+          Python Skills Library
+        </a>: Demonstrates algorithms, recursion, file handling, and data manipulation
       </li>
       <li>
         <a href="https://github.com/khrystianc/CS162/blob/main/FocusGame.py">
           Focus Game
-        </a>: A FocusGame program that has two players playing the Focus Game. Program validates moves, returns reserve and captured statuses, and returns the winner.
+        </a>: Two-player Focus Game with move validation, reserve/capture status, and winner declaration
       </li>
     </ul>
   </section>
-  <section id="skills">
+  <section id="skills" class="section">
     <h2>Skills</h2>
-    <p>Python | C++ | Machine Learning | Cloud Computing | HTML | CSS | JavaScript</p>
+    <p class="skills-list">
+      Python | C++ | Machine Learning | Cloud Computing | HTML | CSS | JavaScript | SQL | Agile Development
+    </p>
   </section>
-  <section id="contact">
+  <section id="contact" class="section">
     <h2>Contact</h2>
     <p>Email: <a href="mailto:khrystian.clark@gmail.com">khrystian.clark@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/khrystianc">github.com/khrystianc</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/khrystianc/">linkedin.com/in/khrystianc</a></p>
   </section>
   <footer>
     <p>© 2025 Khrystian Tino Clark</p>
