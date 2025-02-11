@@ -50,22 +50,25 @@ nav ul li a:hover, nav ul li a.active {
   margin: auto;
 }
 
-.project-list, .skills-list {
-  list-style: none;
-  padding: 0;
+.project {
+  margin-bottom: 1.5rem;
 }
 
-.project-list li, .skills-list li {
-  margin-bottom: 1rem;
+.project h3 {
+  margin: 0;
 }
 
-.expertise-grid {
+.project p {
+  margin: 0.5rem 0 0;
+}
+
+.skills-expertise-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
 }
 
-.expertise-item {
+.skills-expertise-item {
   background-color: #f4f4f4;
   padding: 1rem;
   border-radius: 5px;
