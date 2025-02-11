@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 html {
   scroll-behavior: smooth;
 }
@@ -18,7 +20,7 @@ body.dark-mode {
 .header-container {
   text-align: center;
   padding: 2rem;
-  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  background: linear-gradient(135deg, #ff7e5f, #feb47b);
   color: white;
   position: relative;
 }
