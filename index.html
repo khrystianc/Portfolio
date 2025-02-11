@@ -5,11 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Khrystian Clark's Portfolio</title>
   <link rel="stylesheet" href="styles.css">
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
-  </style>
 </head>
 <body>
   <header>
@@ -19,21 +14,21 @@
       <p>Dynamic Developer | Engineer | Leader</p>
     </div>
   </header>
-<nav>
-  <ul>
-    <li><a href="#about">About</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#expertise">Expertise</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</nav>
+  <nav>
+    <ul>
+      <li><a href="#about" class="active">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#expertise">Expertise</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
   <section id="about" class="section">
     <h2>About Me</h2>
     <p>
       Results-driven software engineer with 10+ combined years of experience in software
       development, API engineering, machine learning, and cloud computing. Proven ability to
-      optimize processes, develop scalable solutions, and lead cross-functional teams in highpressure
+      optimize processes, develop scalable solutions, and lead cross-functional teams in high-pressure
       environments. Adept at Python, C++, Kubernetes, and TensorFlow, with strong
       background in automation, DevOps, and technical leadership. Seeking a role in software
       engineering or web development to drive innovation in fast-paced technological environments.
@@ -87,28 +82,34 @@
     </ul>
   </section>
   <section id="expertise" class="section">
-  <h2>Expertise</h2>
-  <div class="expertise-grid">
-    <div class="expertise-item">
-      <h3>AI Development</h3>
-      <p>Experienced in developing machine learning models using TensorFlow, PyTorch, and OpenAI APIs. Skilled in integrating AI into production-level applications.</p>
+    <h2>Expertise</h2>
+    <div class="expertise-grid">
+      <div class="expertise-item">
+        <h3>AI Development</h3>
+        <p>Experienced in developing machine learning models using TensorFlow, PyTorch, and OpenAI APIs. Skilled in integrating AI into production-level applications.</p>
+      </div>
+      <div class="expertise-item">
+        <h3>Cloud Platforms</h3>
+        <p>Proficient in leveraging Google Cloud Platform for scalable solutions, including storage, compute, and AI tools. Familiar with AWS for deployment and management.</p>
+      </div>
+      <div class="expertise-item">
+        <h3>API Creation & Implementation</h3>
+        <p>Skilled in designing and implementing RESTful and GraphQL APIs for robust data-driven applications. Expertise in API testing and integration.</p>
+      </div>
+      <div class="expertise-item">
+        <h3>Containerization</h3>
+        <p>Versed in Docker for application containerization and Kubernetes for orchestration. Experienced in creating CI/CD pipelines with GitHub Actions.</p>
+      </div>
     </div>
-    <div class="expertise-item">
-      <h3>Cloud Platforms</h3>
-      <p>Proficient in leveraging Google Cloud Platform for scalable solutions, including storage, compute, and AI tools. Familiar with AWS for deployment and management.</p>
-    </div>
-    <div class="expertise-item">
-      <h3>API Creation & Implementation</h3>
-      <p>Skilled in designing and implementing RESTful and GraphQL APIs for robust data-driven applications. Expertise in API testing and integration.</p>
-    </div>
-    <div class="expertise-item">
-      <h3>Containerization</h3>
-      <p>Versed in Docker for application containerization and Kubernetes for orchestration. Experienced in creating CI/CD pipelines with GitHub Actions.</p>
-    </div>
-  </div>
   </section>
   <section id="contact" class="section">
     <h2>Contact</h2>
+    <form class="contact-form" action="https://formspree.io/f/{your_form_id}" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="_replyto" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
     <p>Email: <a href="mailto:khrystian.clark@gmail.com">khrystian.clark@gmail.com</a></p>
     <p>GitHub: <a href="https://github.com/khrystianc">github.com/khrystianc</a></p>
     <p>LinkedIn: <a href="https://www.linkedin.com/in/khrystianc/">linkedin.com/in/khrystianc</a></p>
@@ -116,5 +117,27 @@
   <footer>
     <p>© 2025 Khrystian Tino Clark</p>
   </footer>
+  <script>
+    // Highlight active section in navigation
+    const sections = document.querySelectorAll('.section');
+    const navLi = document.querySelectorAll('nav ul li a');
+
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        if (pageYOffset >= sectionTop - 60) {
+          current = section.getAttribute('id');
+        }
+      });
+
+      navLi.forEach(li => {
+        li.classList.remove('active');
+        if (li.getAttribute('href').includes(current)) {
+          li.classList.add('active');
+        }
+      });
+    });
+  </script>
 </body>
 </html>
