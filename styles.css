@@ -88,6 +88,12 @@ nav ul li a:hover, nav ul li a.active {
   margin: 0.5rem 0 0;
 }
 
+.project p.tech {
+  font-size: 0.85rem;
+  color: #666;
+  font-style: italic;
+}
+
 .skills-expertise-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
